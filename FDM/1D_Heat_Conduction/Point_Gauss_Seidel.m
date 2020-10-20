@@ -1,5 +1,7 @@
 %Point Gauss Seidel Algorithm for Steady State 1D Heat Conduction
 
+clear all; clc;
+
 n = 15; %Defining number of nodes
 L = 1; %Length of the domain (SI Units)
 
