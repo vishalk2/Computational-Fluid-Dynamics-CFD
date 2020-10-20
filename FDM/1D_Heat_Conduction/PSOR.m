@@ -37,8 +37,9 @@ while error>=epsilon %This step goes on as long as Max error in the "T matrix" i
 end
 
 %Results
-T %Displays the approximated Temperature Matrix
+T %Displays the resultant Temperature Matrix
 N %Displays the number of iterations took to arrive at the final values
+error %Displays the final error
   
 %Plots
 x = linspace(1,L,n);
