@@ -14,10 +14,6 @@ T = zeros(1,n); %Initializes a "1 x n" matrix for temperature
 T(1,1) = 100;
 T(1,n) = 0;
 
-%Relaxation Parameter (Used for PSOR)
-w = 1.8; %In general 1<w<2
-%If w = 1, we arrive at the solution based on Gauss Seidel Method but with a lot more number of iterations
-
 %Algorithm
 error = 1; %Error initially; %Can be arbitrary
 epsilon = 0.000001; %Allowable Tolerance
@@ -30,7 +26,7 @@ while error>=epsilon %This step goes on as long as Max error in the "T matrix" i
   N = N+1; %Iteration counter incremented for every iteration that the "while loop" takes
     
   for i=2:n-1 %This loop runs for obtaining all the Temperature values for all the "INTERNAL NODES".
-    T(i) = (1-w)*T_old(i) + (w/2)*(T(i-1) + T_old(i+1));
+    T(i) = (1/2)*(T(i-1) + T_old(i+1));
   end
   
   error = max(abs(T-T_old));
