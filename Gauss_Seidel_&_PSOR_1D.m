@@ -20,10 +20,10 @@ w = 1.8; %In general 1<w<2
 
 %Algorithm
 error = 1; %Error initially; %Can be arbitrary
-epsilon = 0.000001; %Convergence Check
+epsilon = 0.000001; %Allowable Tolerance
 %IF ERROR <= EPSILON, we arrive at our solution for "N" number of iterations at the end
 
-while error>=epsilon %This step goes on as long as Max error in the "T matrix" is greater than or equal to the Convergence check (Epsilon)
+while error>=epsilon %This step goes on as long as Max error in the "T matrix" is greater than or equal to the Tolerance (Epsilon)
 
   T_old = T; %T_old refers to the T obtained in the previous iteration.
   
