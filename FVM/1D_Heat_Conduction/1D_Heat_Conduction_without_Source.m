@@ -2,6 +2,7 @@
 
 clear all; clc;
 
+%Following SI Units
 %Known Values
 L = 1; %Length of the domain (or rod in this example)
 n = 5; %Number of control volumes considered
