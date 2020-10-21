@@ -15,6 +15,11 @@ ke = 0.5;
 kw = 0.5;
 q = 1000*1000; %Uniform Heat Generation
 
+%Boundary Conditions
+%Temperature - in degree celsius
+TA = 100;
+TB = 200;
+
 %Calculated Constants
 aw = kw/dx;
 ae = ke/dx;
@@ -29,11 +34,11 @@ b = zeros(N,1); %Constants' Matrix
 
 %Algorithm
 for i=1:N
-    if x(i) == min(x) %For Boundary Node-1 (Left most Node)
+    if x(i) == min(x) %For Boundary Point-1 (Left most Node)
         A(i,i) = ae + 2*(kw/dx);
         A(i,i+1) = -ae;
         b(i,1) = q*dx + 2*(kw/dx)*TA;
-    elseif x(i) == max(x) %For Boundary Node-2 (Right most Node)
+    elseif x(i) == max(x) %For Boundary Point-2 (Right most Node)
         A(i,i) = aw + 2*(ke/dx);
         A(i,i-1) = -aw;
         b(i,1) = q*dx + 2*(ke/dx)*TB;
