@@ -8,8 +8,7 @@ L = 1; %Length of the domain (or rod in this example)
 n = 5; %Number of control volumes considered
 dx = L/n; %Grid spacing; %Assumed Uniform Grid Spacing
 
-%Thermal Conductivity
-%Assumed constant throught the domain
+%Thermal Conductivity - Assumed constant throught the domain
 ke = 1000;
 kw = 1000;
 
@@ -23,7 +22,7 @@ aw = kw/dx;
 ae = ke/dx;
 
 %Mesh Creation
-x = dx/2:dx:1;
+x = dx/2:dx:L;
 N = length(x);
 
 %Matrices creation
