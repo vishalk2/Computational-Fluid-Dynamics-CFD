@@ -52,7 +52,7 @@ b %Constant Matrix
 T = A\b %Displays the Temperature matrix after solving
 
 %Plots and Comparison between Analytical and Exact solution curves
-y = linspace(0,1,500);
+y = linspace(0,L,500);
 Te = ((TB-TA)/L)*y + TA; %Exact solution for Temperature
 plot(x,T,'o-',y,Te,'r')
 xlabel('Length')
