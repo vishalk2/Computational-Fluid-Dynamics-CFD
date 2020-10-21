@@ -51,10 +51,10 @@ A %Coefficient Tri-Diagonal Matrix
 b %Constant Matrix
 T = A\b %Displays the Temperature matrix after solving
 
-%Plots and Comparison between Analytical and Exact solution curves
+%Plots and Comparison between Analytical/Exact and Numerical solution curves
 y = linspace(0,L,500);
-Te = ((TB-TA)/L)*y + TA; %Exact solution for Temperature
+Te = ((TB-TA)/L)*y + TA; %Exact solution (Analytical) for Temperature
 plot(x,T,'o-',y,Te,'r')
 xlabel('Length')
 ylabel('Temperature')
-legend('Analytical solution','Exact solution')
+legend('Numerical solution','Exact/Analytical solution')
