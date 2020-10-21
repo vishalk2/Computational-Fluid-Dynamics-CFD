@@ -56,4 +56,4 @@ Te = TA + y.*(((TB-TA)/L)+(q/(2*k)).*(L-y)); %Exact solution (Analytical) for Te
 plot(x,T,'o-',y,Te,'r')
 xlabel('Length')
 ylabel('Variation in T')
-legend('Approximate solution','Exact Solution')
+legend('Numerical solution','Exact/Analytical Solution')
