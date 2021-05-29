@@ -1,5 +1,5 @@
 % Example-1
-% Couette Flow : Flow between 2 infinitely parallel plates
+% Couette Flow : Flow between 2 infinitely parallel plates using FTCS
 clear all; clc
 
 % Known Parameters
