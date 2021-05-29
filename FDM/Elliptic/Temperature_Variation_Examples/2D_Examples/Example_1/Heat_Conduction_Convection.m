@@ -27,7 +27,7 @@ T = zeros(N,M);
 
 % Boundary Conditions
 T(:,1) = 500; % Left Boundary T=500K
-T(N,:) = 500; % Bottom Boundary T=500K
+T(N,:) = 500; % Top Boundary T=500K
 T(:,M) = 500; % Right Boundary T=500K
 
 % Computation
@@ -44,7 +44,7 @@ while err>epsilon
             err = err + power(T(j,i)-T_old,2);
         end
     end
-    for i=2:M-1 % Top Neumann Boundary Condition
+    for i=2:M-1 % Bottom Neumann Boundary Condition
         T(1,i) = (4*T(2,i)-T(3,i)+(2*dy*(h/k))*T_inf)/(3+(2*dy*(h/k)));
     end
     err = sqrt(err/(M*N));
