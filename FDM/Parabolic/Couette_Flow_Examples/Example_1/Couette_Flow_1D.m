@@ -6,7 +6,7 @@ clear all; clc
 N = 101; % No. of grid points
 h = 1; % Distance between the plates (Length of y-domain)
 dy = h/(N-1); % Grid Size
-u_m = 2; % Velocity of Moving plate
+u_m = 1; % Velocity of Moving plate
 Re = 100; % Reynold's Number (Aribitrary)
 
 % Calculations
@@ -33,8 +33,8 @@ u(N,1) = 0; % Stationary plate
 n = 0; % Iterator
 while t<=50
     u_old = u;
-    for i=2:N-1 % For Internal Nodes
-        u(i,1) = u_old(i,1) + gamma_y*(u_old(i+1,1)-2*u_old(i,1)+u_old(i-1,1));
+    for j=2:N-1 % For Internal Nodes
+        u(j,1) = u_old(j,1) + gamma_y*(u_old(j+1,1)-2*u_old(j,1)+u_old(j-1,1));
     end
     n = n+1;
     t = t + dt;
@@ -44,3 +44,14 @@ end
 u
 n
 t
+
+% Plotting
+figure;
+hold on;
+grid on;
+for i=1:(2/dt):n
+    plot(U(i,:),h:-dy:0,'b-')
+end
+xlabel('Velocity (u)'),ylabel('Height (Y)')
+title('Flow between 2 parallel plates')
+hold off;
