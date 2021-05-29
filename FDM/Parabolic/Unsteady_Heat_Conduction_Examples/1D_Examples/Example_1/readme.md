@@ -1,4 +1,4 @@
-# Example-1 : 1D Unsteady Heat Conduction
+# Example-1 : 1D Steady Heat Conduction
 
 Problem Statement : 
 
