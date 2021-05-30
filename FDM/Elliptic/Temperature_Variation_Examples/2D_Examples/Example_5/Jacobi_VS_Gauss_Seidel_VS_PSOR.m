@@ -26,10 +26,10 @@ T_Jacobi = zeros(N,M);
 T_old_Jacobi = zeros(N,M);
 
 % Boundary Conditions
-T_Jacobi(N,:) = 900; % Bottom Boundary T = 100 C
-T_Jacobi(1,:) = 600; % Top Boundary T = 0 C
-T_Jacobi(:,1) = 400; % Left Boundary T = 100 C
-T_Jacobi(:,M) = 800; % Right Boundary T = 0 C
+T_Jacobi(N,:) = 900; % Bottom Boundary
+T_Jacobi(1,:) = 600; % Top Boundary
+T_Jacobi(:,1) = 400; % Left Boundary
+T_Jacobi(:,M) = 800; % Right Boundary
 
 % Computation - Jacobi Method
 epsilon = 1e-8; % Tolerance or Error Sensitivity
@@ -76,10 +76,10 @@ title({['Temperature Contour Plot'];['Jacobi Method'];['Iterations taken : ',num
 T_GS = zeros(N,M);
 
 % Boundary Conditions
-T_GS(N,:) = 900; % Bottom Boundary T = 100 C
-T_GS(1,:) = 600; % Top Boundary T = 0 C
-T_GS(:,1) = 400; % Left Boundary T = 100 C
-T_GS(:,M) = 800; % Right Boundary T = 0 C
+T_GS(N,:) = 900; % Bottom Boundary
+T_GS(1,:) = 600; % Top Boundary
+T_GS(:,1) = 400; % Left Boundary
+T_GS(:,M) = 800; % Right Boundary
 
 % Computation - Gauss Seidel Method
 epsilon = 1e-8; % Tolerance or Error Sensitivity
@@ -119,10 +119,10 @@ T_PSOR = zeros(N,M);
 T_old_PSOR = zeros(N,M);
 
 % Boundary Conditions
-T_PSOR(N,:) = 900; % Bottom Boundary T = 100 C
-T_PSOR(1,:) = 600; % Top Boundary T = 0 C
-T_PSOR(:,1) = 400; % Left Boundary T = 100 C
-T_PSOR(:,M) = 800; % Right Boundary T = 0 C
+T_PSOR(N,:) = 900; % Bottom Boundary
+T_PSOR(1,:) = 600; % Top Boundary
+T_PSOR(:,1) = 400; % Left Boundary
+T_PSOR(:,M) = 800; % Right Boundary
 
 % Finding Optimum Relaxation Factor
 B = dx/dy;
