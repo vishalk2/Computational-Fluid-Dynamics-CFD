@@ -1,1 +1,1 @@
-# 2D Steady State Elliptic Temperature variation examples
+# 2D Steady State Heat Conduction (Elliptic PDE - Temperature variation) examples
