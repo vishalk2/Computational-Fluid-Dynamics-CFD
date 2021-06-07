@@ -2,6 +2,7 @@
 
 Problem Statement :
 
+![Screenshot (1193)](https://user-images.githubusercontent.com/68963724/120982119-fafef700-c795-11eb-89c5-26785aedded3.png)
 
 
 Pic : Temperature variation Plot at the end of simulation time
