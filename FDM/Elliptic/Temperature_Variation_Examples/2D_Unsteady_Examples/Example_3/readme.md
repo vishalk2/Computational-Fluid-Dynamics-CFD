@@ -2,6 +2,7 @@
 
 Problem Statement :
 
+![Screenshot (1195)](https://user-images.githubusercontent.com/68963724/120982697-985a2b00-c796-11eb-8338-4f6ce72aad67.png)
 
 
 Pic : Temperature Variation at Steady State (i.e. at the end of simulation time)
