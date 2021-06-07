@@ -20,6 +20,7 @@ gamma_y = alpha*dy/(dt^2);
 
 % Initializing Temperature matrix
 T = zeros(N,M);
+T_array = {}; % Temperature Array to store T at each time step
 
 % Boundary Conditions
 T(:,1) = 500; % Left Wall Boundary Condition
@@ -43,9 +44,14 @@ while t<10
     end
     err = sqrt(err/(M*N));
     n = n+1;
+    if n==10 || n==30 || n==50 || n==100 || n==150 || n==200
+       T_array = [T_array;T];
+    elseif n==275 || n==350 || n==550 || n==750 || n==1000 || n==1250
+       T_array = [T_array;T]; 
+    end
     t = t+dt;
 end
-T
+%T
 n
 err
 
@@ -55,3 +61,23 @@ y = linspace(Ly,0,N);
 [X,Y] = meshgrid(x,y);
 contourf(X,Y,T,':','ShowText','on'),colorbar,colormap(jet)
 xlabel('X'),ylabel('Y'),title('Temperature Variation (T)')
+
+% Animation
+figure;
+myVideo = VideoWriter('Unsteady Heat COnduction'); %open video file
+myVideo.FrameRate = 3;
+open(myVideo)
+
+for p=1:12
+    %figure;
+    x = linspace(0,Lx,M);
+    y = linspace(Ly,0,N);
+    [X,Y] = meshgrid(x,y);
+    TT = T_array(p);
+    contourf(X,Y,TT{:,:},':','ShowText','on'),colorbar,colormap(jet)
+    xlabel('X'),ylabel('Y'),title('Temperature Variation (T)')
+    pause(0.02)
+    frame = getframe(gcf);
+    writeVideo(myVideo,frame);
+end
+close(myVideo)
