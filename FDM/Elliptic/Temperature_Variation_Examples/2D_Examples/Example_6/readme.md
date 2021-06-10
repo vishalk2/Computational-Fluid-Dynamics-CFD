@@ -2,6 +2,7 @@
 
 Problem Statement :
 
+![Screenshot (1202)](https://user-images.githubusercontent.com/68963724/121504225-78797000-c9ff-11eb-94f1-7213060e6010.png)
 
 
 Pic-1 : Temperature Variation plot from Jacobi Method
