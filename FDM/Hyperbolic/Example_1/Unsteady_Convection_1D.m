@@ -56,5 +56,7 @@ end
 
 % Plotting
 plot(x,U_initial,'black','LineWidth',2)
+xlabel('Length (x)'),ylabel('Velocity (U)')
+title('Velocity Profile Comparison')
 legend('Time Step : 0.1','Time Step : 0.01','Time Step : 0.001','Time Step : 0.0001','Original Profile','Location',"northeastoutside")
 hold off;
