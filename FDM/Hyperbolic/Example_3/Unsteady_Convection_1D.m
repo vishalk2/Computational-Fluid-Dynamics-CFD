@@ -5,7 +5,7 @@ clear all; clc
 
 % Known Values
 Lx = 300; % Length of x-domain
-C = 300; % Velocity (300 m/s)
+a = 300; % Velocity (300 m/s)
 M = 61; % Number of grid points
 x = linspace(0,Lx,M);
 
@@ -31,7 +31,7 @@ U_lax = [];
 % Computation
 for j=1:length(Dt)
     dt = Dt(j); % Time Step
-    lambda = C*dt/dx; % Courant Number
+    lambda = a*dt/dx; % Courant Number
     CL(j) = lambda; % Courant Number for each time step
     
     % Initializing Velocity Matrix
