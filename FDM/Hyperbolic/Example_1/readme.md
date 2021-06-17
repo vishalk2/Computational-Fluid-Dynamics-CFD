@@ -2,6 +2,7 @@
 
 Problem Statement :
 
+![Screenshot (1218)](https://user-images.githubusercontent.com/68963724/122418132-a20a3c80-cfa7-11eb-8d02-44a0705869c4.png)
 
 
 Pic-1 : Velocity Profile Comparison
