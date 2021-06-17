@@ -2,6 +2,8 @@
 
 Problem Statement :
 
+![Screenshot (1219)](https://user-images.githubusercontent.com/68963724/122418205-ab93a480-cfa7-11eb-8833-9869cddea786.png)
+
 
 Pic_1 : Velocity Profile with 20 nodes
 
