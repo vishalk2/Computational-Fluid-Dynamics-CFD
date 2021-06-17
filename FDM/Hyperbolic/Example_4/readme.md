@@ -2,6 +2,8 @@
 
 Problem Statement :
 
+![Screenshot (1212)](https://user-images.githubusercontent.com/68963724/122415646-b8af9400-cfa5-11eb-8ebd-4de67b356f3b.png)
+
 
 Pic : Velocity Profile Comparison for different Courant Numbers (C)
 
