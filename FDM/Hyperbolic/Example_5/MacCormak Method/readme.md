@@ -1,7 +1,5 @@
 # Example-5 : Non Linear Wave - 1D : MacCormak Method
 
-Problem Statement :
-
 
 Pic_1 : Velocity Profile for (dt/dx) = 1  or  dt = 0.05
 
