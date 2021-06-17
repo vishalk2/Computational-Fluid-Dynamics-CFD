@@ -2,6 +2,8 @@
 
 Problem Statement :
 
+![Screenshot (1207)](https://user-images.githubusercontent.com/68963724/122413570-1ba02b80-cfa4-11eb-87fa-940b2ba5e0a5.png)
+
 
 Pic_1 : Velocity Profiles for different Courant Numbers (C) - FTBS Scheme
 
