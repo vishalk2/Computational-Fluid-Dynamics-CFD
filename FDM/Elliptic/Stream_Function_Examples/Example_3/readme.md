@@ -1,6 +1,9 @@
 # Example-3 : Stream Function Variation : Jacobi VS Gauss-Seidel VS PSOR methods
 
-Problem Statement :
+Problem Statement : f = Stream Function (Psi)
+
+![Screenshot (1226)](https://user-images.githubusercontent.com/68963724/123247244-4e967200-d504-11eb-9959-dabdc17f3c45.png)
+
 
 
 Pic_1 : Stream Function (Psi) Contour Plot (from Jacobi Method)
