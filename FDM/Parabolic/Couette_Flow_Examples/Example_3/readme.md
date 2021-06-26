@@ -6,6 +6,7 @@ Problem Statement :
 
 Pic : Velocity variation with height
 
+![Figure_1](https://user-images.githubusercontent.com/68963724/123502776-7e608980-d66c-11eb-8c85-c40af5017a3a.png)
 
 
 Animation : Couette Flow Animation
