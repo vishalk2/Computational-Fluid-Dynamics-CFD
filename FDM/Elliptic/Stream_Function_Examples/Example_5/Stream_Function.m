@@ -39,7 +39,7 @@ while err>epsilon
     for j=2:N-1 % For Internal Grid points
         for i=2:M-1 % For Internal Grid points
             psi_temp = psi(j,i); % Value of Psi from previous iteration
-            psi(j,i) = (1/ap)*(ae*psi(j+1,i) + aw*psi(j-1,i) + an*psi(j,i+1) + as*psi(j,i-1) + 10*(x(i)^2 + y(j)^2 + 10)); % Updated Psi value
+            psi(j,i) = (1/ap)*(ae*psi(j+1,i) + aw*psi(j-1,i) + an*psi(j,i+1) + as*psi(j,i-1) + 81*x(i)*y(j)); % Updated Psi value
             err = err + power(psi(j,i)-psi_temp,2);
         end
     end
