@@ -2,6 +2,8 @@
 
 Problem Statement :
 
+![Screenshot (1239)](https://user-images.githubusercontent.com/68963724/123503768-9d621a00-d672-11eb-9808-2c02e650ca37.png)
+
 
 Pic : Stream Function (Psi) Contour Plot
 
