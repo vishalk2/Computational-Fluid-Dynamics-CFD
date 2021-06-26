@@ -2,6 +2,7 @@
 
 Problem Statement :
 
+![Screenshot (1229)](https://user-images.githubusercontent.com/68963724/123502977-a8667b80-d66d-11eb-9936-310372632f90.png)
 
 
 Pic : Velocity variation with height
